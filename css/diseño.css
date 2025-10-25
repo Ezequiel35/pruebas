@@ -1,0 +1,80 @@
+body{background-color: rgb(197, 169, 108);}
+
+.til{font-size: 40px;
+    background-color: white;
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;}
+
+.p1{color: black;
+    font-size: 20px;
+    text-align: center;
+    }
+
+.til2{font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    }
+
+.contenedor{display: flex;
+    justify-content: center; 
+    gap: 70px;         /* Espacio entre los bloques */
+    flex-wrap: wrap;  /* Para que se acomoden en móvil o pantallas pequeñas */
+    padding: 15px;}
+
+.elem{background: linear-gradient(black, rgb(212, 208, 208));
+        border: 4px solid black;
+        border-radius: 10px;
+        width: 340px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
+.elem:hover{
+    transition: 0.4s;
+    width: 360px;
+    height: 370px
+}
+
+.fotos{ width: 100%;
+        height: 80%;
+        padding-top: 7px;}
+
+.textoapartados{text-align: center;
+font-size: 26px;
+background-color: rgb(219, 188, 120);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 5px;
+margin-bottom: 5px;}
+
+.carta{width: 50%;
+background-color: rgb(214, 188, 129);
+margin:auto;
+border: 5px, solid rgb(36, 35, 35);
+padding:20px;
+box-sizing: border-box;
+box-shadow: 0 0 20px 0px black;
+border-radius: 10px;}
+
+.tilcarta{text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 30px;}
+
+.textcarta{color: rgb(0, 0, 0);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: justify;
+font-size: 16px;
+word-spacing: -2px ;
+}
+
+span{font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    }
+

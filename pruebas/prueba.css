@@ -1,0 +1,128 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.t1 {
+  color: rgb(50, 214, 28);
+}
+
+.p1 {
+  color: blueviolet;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: black;
+  opacity: 0.5;
+  width: 400px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.prueba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 20px;
+
+}
+
+.caja {
+  background-color: blueviolet;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  box-shadow: 0px 0px 40px 0px rgb(19, 19, 19);
+}
+
+/*al pasar mouse por encima*/
+.caja:hover{
+  background-color: aquamarine;
+  width: 530px;
+  height: 530px;
+  transition: all 0.5s;
+}
+
+.caja1 {
+  background: linear-gradient(rgb(2, 70, 148), rgb(128, 203, 233));
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+}
+
+.texcaja {
+  text-align: center;
+  font-size: 22px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.perro {
+  max-width: 100%;
+  height: auto;
+}
+
+.cajaprueba {
+  width: 50%;
+  background: linear-gradient(black, rgb(189, 187, 187));
+  margin: auto;
+  border: 5px, solid rgb(190, 15, 15);
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 3px black;
+}
+
+.tilprueba {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(155, 155, 155);
+}
+
+.pprueba {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.imgprueba {
+  width: 100%;
+  border-radius: 30%;
+  margin: auto;
+  border: 2px solid black;
+}
+
+details{background-color: rgb(240, 228, 72);
+font-size: 20px;
+border: 1px solid black;
+padding: 5px;
+color: rgb(241, 61, 30);}
+
+details[open]{background-color: rgb(181, 230, 213);}
+
+summary{margin: 10px;
+color: rgb(43, 42, 42);
+font-size: 24px;}
+
+table{
+  width: 50%;
+  height: 100px;
+  margin: 50px auto 0 auto;
+  border: 2px solid salmon;
+  
+}
+
+td{
+  border: 2px solid salmon;
+  text-align: center;
+}
+
+
+
+
