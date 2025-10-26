@@ -104,7 +104,8 @@ body{
 
 /*Ventana modal y dialog*/
 
-dialog{
+.dialog{
+    display: none;
     top: 300px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 500px;
@@ -125,15 +126,24 @@ button{
     right: 0px;
 }
 
+/*con esto hago que al pasar el mouse por encima del elemento contenido1, se vea el otro elemento. En el codigo tuve que meter al dialog dentro del contenido padre de contenido1 para que con la seña de ~ tome a su hermano */
+.contenido1:hover ~ .dialog{ 
+    display: block;
+    
+}
+
 /*Display Flex*/
 
 .contenedorflex{
     display: flex;
-    justify-content: center;
-    background-color: beige;
+    flex-wrap: wrap;
+    justify-content: center; /*alineamiento horizontal al centro*/
+    align-content: center;  /*alineamiento vertical de varias linieas de elementos al centro*/
+    background-color: rgb(241, 241, 189);
     padding: 0px;
     margin: 20px;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    height: 200px;
     
 }
 
@@ -141,7 +151,7 @@ button{
 .contenido1{
     background-color: lawngreen;
     width: 400px;
-    min-height: 80px;
+    max-height: 80px;
     border-radius: 20px;
     margin: 10px;
     text-align: center;
@@ -153,7 +163,7 @@ button{
     background-color: rgb(32, 123, 241);
     border-radius: 20px;
     width: 400px;
-    min-height: 80px;
+    max-height: 80px;
     margin: 10px;
     text-align: center;
     
@@ -162,7 +172,7 @@ button{
 .contenido3{
     background-color: rgb(236, 240, 16);
     width: 400px;
-    min-height: 80px;
+    max-height: 80px;
     border-radius: 20px;
     margin: 10px;
     text-align: center;
@@ -171,7 +181,7 @@ button{
 .contenido4{
     background-color: rgb(240, 117, 16);
     width: 400px;
-    min-height: 80px;
+    max-height: 80px;
     border-radius: 20px;
     margin: 10px;
     text-align: center;

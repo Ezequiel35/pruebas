@@ -272,9 +272,18 @@ Una cosa a usar tambien son los snipper, que funciona para dejar marcado un tipo
 **Flexbox:** Un modelo de caja flexible, o sea adaptable para los elementos. Al contenedor principal, se le debe dar un estilo flex: display: flex.
 Ahora otra cosa que es importante, seria los items flex, es decir los elementos que estan dentro del contenedor definir que sean flex, con esto es posible elegir la direccion de cada elemento, ademas de que sean responsive.
 Tenemos:
--flex-direction: con las opciones de row y row-reverse, con esto podesmos mezclar el orden de los elementos en cuanto a derecha a izquierda o de izquierda a derecha. Otra opcion es column, esto hace que cada elemento se genere en columnas uno abajo de otro y a su vez se puede usar el column-reverse que hace lo mismo pero al revez.
+    -flex-direction: con las opciones de row y row-reverse, con esto podesmos mezclar el orden de los elementos en cuanto a derecha a izquierda o de izquierda a derecha. Otra opcion es column, esto hace que cada elemento se genere en columnas uno abajo de otro y a su vez se puede usar el column-reverse que hace lo mismo pero al revez.
 
-    Propiedades principales de Flexbox:
+    -flex-wrap: genera que los elementos, bajen de linea, cuando ya no alcanzan en el ancho del navegador. Con esto mantienen su tamaño de px.
+
+    -flex-flow: seria para juntar dos tipos de estilo, el de wrap o no wrap y el de direccion.
+
+**Alineacion:** estilos para alinear de cierta forma los elementos.
+    -Justify-content: alinea los elementos en el eje horizontal. Se puede usar Start, end, center, space-between (el primer elemento va al principio, el ultimo va al final y los del medio se ajustan para que queden a la misma distancia entre ellos), space-around (cada elemento tiene una separacion igual, pero hay diferencias con el primero y el utlimo en cuanto a sus bordes), space-evenly (cada elemento tiene una separacion igual, incluso con los bordes).
+
+    -Align-items: alinea los elementos en el eje vertical Sirve solo para cuando hay una linea de elementos. Se puede usar start (ocupan el alto del contenido nomas y figuran al principio), stretch (se estiran para ocupar todo el contenido padre), end, center, baseline(se alinea en base al elemento de dentro, es decir no al alto del elemento, sino a lo que hay dentro).
+
+    -Align-content: alinea los elementos en el eje vertical. Los toma todos juntos sin dejar espacios entre si, mas que nada cuando hay varias lineas de elementos. Se puede usar los mismo estilos que con align-items.
 
 
 
