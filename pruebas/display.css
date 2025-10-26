@@ -33,11 +33,13 @@ body{
 
 .nav_item{
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
+    transition: 0.3s;
 }
 
-.nav_item:hover{
-    background-color:rgb(118, 162, 163) ;
+.nav_item:not(.nav_item--login):hover{ /*Genere que a todos los items se haga el hover salgo al item login*/
+    background-color:rgb(59, 88, 88) ;
+    border-radius: 20px;
 }
 
 .nav_link{
@@ -46,6 +48,13 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
+
+.link--login{
+    background-color: rgb(38, 56, 56);
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+
 
 .nav_img img{
     display: none;

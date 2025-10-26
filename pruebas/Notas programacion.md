@@ -162,7 +162,7 @@ Si queremos que sea al revez, o sea que tome lo que empieza con algo seria con e
     -Height
     -Width
     -Box-sizing: Se usa para ajustar que la medida total de la caja sea el ancho y alto que le coloquemos. O sea que si hay margen, borde, paddin, etc, todo se suma para que de el total del box que definamos
-    -Gap: se usa para dar espacio entre los bloques
+    -Gap: se usa para dar espacio entre los bloques (en flex)
 
 **Unidades de Medidas:**  PX: pixeles, seria cada pequeña luz del monitor. Generalmente se usa para definir alto y ancho de imagenes, tamaños de texto, margenes, padding, etc.
                           PT: puntos (Ni se usan)
@@ -278,6 +278,8 @@ Tenemos:
 
     -flex-flow: seria para juntar dos tipos de estilo, el de wrap o no wrap y el de direccion.
 
+    -flex-basis: tamaño minimo/base que un elemento se puede encoger, sino tiene que pasar para abajo.
+
 **Alineacion:** estilos para alinear de cierta forma los elementos.
     -Justify-content: alinea los elementos en el eje horizontal. Se puede usar Start, end, center, space-between (el primer elemento va al principio, el ultimo va al final y los del medio se ajustan para que queden a la misma distancia entre ellos), space-around (cada elemento tiene una separacion igual, pero hay diferencias con el primero y el utlimo en cuanto a sus bordes), space-evenly (cada elemento tiene una separacion igual, incluso con los bordes).
 
@@ -285,6 +287,8 @@ Tenemos:
 
     -Align-content: alinea los elementos en el eje vertical. Los toma todos juntos sin dejar espacios entre si, mas que nada cuando hay varias lineas de elementos. Se puede usar los mismo estilos que con align-items.
 
+    -Align-self: se usa para el elemento hijo y es para moverlo donde sea. Funciona si el elemento padre tiene asignado un align-items. Se usan los mismos estilos que los anteriores.
+  
 
 
 
