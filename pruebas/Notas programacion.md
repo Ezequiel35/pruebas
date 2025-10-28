@@ -278,6 +278,8 @@ Tenemos:
 
     -flex-flow: seria para juntar dos tipos de estilo, el de wrap o no wrap y el de direccion.
 
+    -flex-grow: controla cuánto espacio adicional puede tomar un elemento flexible dentro de un contenedor, en proporción a los otros elementos flexibles. Si se le asigna un valor a flex-grow, el elemento puede crecer para llenar el espacio disponible en el contenedor.
+
     -flex-basis: tamaño minimo/base que un elemento se puede encoger, sino tiene que pasar para abajo.
 
 **Alineacion:** estilos para alinear de cierta forma los elementos.
@@ -288,7 +290,10 @@ Tenemos:
     -Align-content: alinea los elementos en el eje vertical. Los toma todos juntos sin dejar espacios entre si, mas que nada cuando hay varias lineas de elementos. Se puede usar los mismo estilos que con align-items.
 
     -Align-self: se usa para el elemento hijo y es para moverlo donde sea. Funciona si el elemento padre tiene asignado un align-items. Se usan los mismos estilos que los anteriores.
-  
+
+**Responsive:** 
+    -Bloques Flexibles: Soluciones con max o min width, otra manera es a base de usar porcentaje de width.
+    -Multimedia Flexibles: Seria importante (para imagenes) que se use su max-width, para que se agrande hasta el maximo de su resolucion y un height auto. Ahora para los videos es ideal agregarlo dentro de un contenedor, a ambos se le da un max-width de 100% y al padre un aspect-ratio: 16/9.
 
 
 
