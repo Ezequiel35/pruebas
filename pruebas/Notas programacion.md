@@ -295,6 +295,12 @@ Tenemos:
     -Bloques Flexibles: Soluciones con max o min width, otra manera es a base de usar porcentaje de width.
     -Multimedia Flexibles: Seria importante (para imagenes) que se use su max-width, para que se agrande hasta el maximo de su resolucion y un height auto. Ahora para los videos es ideal agregarlo dentro de un contenedor, a ambos se le da un max-width de 100% y al padre un aspect-ratio: 16/9.
 
+**Media-quary:** Es la forma de que ciertos estilos o elementos se ajusten si X cosa pasa. Ejemplo, si la pantalla es de Xpx o mas chica, pasa tal cosa con este elemento y demas. Se pueden usar varias condiciones, conectadas con el "and".
+    -Print: Es decir al imprimir, podemos cambiar el estilo.
+    -(max-width: 768px): Cuando el ancho maximo de la pantalla es de esos pixeles o menos, cambiar a tal cosa.
+    -Screen: solo para cuando es pantalla la visualizacion.
+
+
 
 
 
