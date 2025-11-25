@@ -345,7 +345,12 @@ Otra expresion es minmax(agregar valor minimo y valor maximo) con esto lo que ha
 **Filtros, Escala, Funciones:** 
 Funciones dentro del estilo Filter: drop-shadow, blur, brightness, 
 
+**Variables:** Un espacio que se se almacena en la memoria del programa que generalmente contiene un dato especifico. En css, se pueden crear escribiendo "--xxx:" con esa queda definida y leugo se puede colocar var(xxx) como funcion en otro estilo y llamarla.
 
+**Scroll:** Propiedades a colocar para el scroll que pueden servir:
+    -scroll-behavior: smooth:  El scroll se hace mas despacio, sin ser tan brusco.
+    -scrollbar-color: Se usa para darle color a la barra. Se colocan 2, el primero para la barra y el segundo para el fondo de la barra.
+    -scrollbar-width: Se usa para el grosor, serian auto, thin o none
 
 
 

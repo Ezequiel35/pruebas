@@ -248,7 +248,7 @@ button {
   }
 }
 
-/*ANIMACION NEON DE BOTON*/
+/*ANIMACION NEON DE BOTON
 
 .contboton{
   position: relative;
@@ -276,6 +276,7 @@ button:hover{
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
+
 
 @keyframes boton {
   0%{
@@ -334,7 +335,7 @@ button:hover{
     color: rgb(31, 192, 255);
   }
 }
-
+*/
 .context{
   background-color: rgb(185, 136, 231);
   display: flex;
@@ -431,5 +432,64 @@ button:hover{
   to{
     width: 100%;
     background-color: rgb(255, 0, 0);
+  }
+}
+
+.variables{
+  --color-principal: #ca46c4;
+  background-color: var(--color-principal);
+}
+
+.activo{
+  width: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 70px;
+  background-color: transparent;
+  border: 2px solid rgb(126, 126, 126); 
+  align-content: center;
+  position: relative;
+}
+
+.circulo{
+  width: 25px;
+  height: 25px;
+  margin-right: 75px;
+  margin-top: 3px ;
+  border-radius: 100px;
+  background-color:rgb(126, 126, 126);
+  position: absolute;
+  border: none;
+}
+
+.circulo:active{
+  animation-name: click;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.activo:has(.circulo:active) {
+  animation: activo2 0.3s forwards;
+}
+
+@keyframes click {
+  from{
+    background-color: rgb(31, 192, 255);
+  }
+
+  to{
+    background-color: rgb(31, 192, 255);
+    margin-right: 0px ;    
+  }
+}
+
+@keyframes activo2 {
+  from{
+    border: 2px solid rgb(31, 192, 255);
+  }
+
+  to{
+    border: 2px solid rgb(31, 192, 255); 
   }
 }
