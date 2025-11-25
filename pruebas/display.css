@@ -248,7 +248,7 @@ button {
   }
 }
 
-/*ANIMACION NEON DE BOTON
+/*ANIMACION NEON DE BOTON*/
 
 .contboton{
   position: relative;
@@ -335,7 +335,6 @@ button:hover{
     color: rgb(31, 192, 255);
   }
 }
-*/
 .context{
   background-color: rgb(185, 136, 231);
   display: flex;
