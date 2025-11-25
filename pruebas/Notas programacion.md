@@ -342,7 +342,8 @@ Otra expresion es minmax(agregar valor minimo y valor maximo) con esto lo que ha
 
     -SubGrid: Manera de ajustar un grid que ya esta dentro de otro grid, y que no afecte de manera incorrecta a los demas. Es decir a los items dentro de un elemento grid, se le coloca el estilo de subgrid y con eso ocupa su lugar correcto dentro del grid principal.
 
-    
+**Filtros, Escala, Funciones:** 
+Funciones dentro del estilo Filter: drop-shadow, blur, brightness, 
 
 
 
