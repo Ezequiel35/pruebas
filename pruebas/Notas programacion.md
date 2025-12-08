@@ -364,11 +364,17 @@ Otra manera es buscasr y ademas reemplezar la palabra por otra que escribamos.
 -Ejecucion y Depuracion:
 Nos sirve para revisar el codigo y ver en que momento esta fallando cierta linea, variable o funcion. Esto es mas usado con Javascript.
 
+-Atajos:
+shift + flechas: seleccionar texto
+ctrl + p: buscador de archivos (arriba)
+shift + alt + flechas: copias una linea y la copias para abajo.
+alt + flechas: moves una linea para abajo o arriba.
+alt + click en la linea de codigo: podes hacer tab y ajustar las lineas elegidas tabulando solo esas.
+ctrl + f: se abre para buscar
+ctrl + h: se abre para reemplazar
 
-
-
-
-
+-Creacion de Snippets:
+Con esto puedo crear para dejar marcado un tipo de abreviacion que podemos usar en otros momentos. Por ejemplo un mismo tipo de nav, funcion, etc.
 
 
 
