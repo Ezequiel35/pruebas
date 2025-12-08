@@ -399,7 +399,7 @@ button:hover{
   
 }
 
-/*ANIMACION CON SCROLL*/
+/*ANIMACION CON prueba*/
 
 .animacion2{
   background-color: aquamarine;
@@ -419,7 +419,7 @@ button:hover{
   animation-name: barra2;
   animation-fill-mode: both;
   animation-timing-function: linear;
-  animation-timeline: scroll();
+  animation-timeline: prueba();
   box-sizing: border-box;
 }
 

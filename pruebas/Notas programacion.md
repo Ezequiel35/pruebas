@@ -353,7 +353,16 @@ Funciones dentro del estilo Filter: drop-shadow, blur, brightness,
     -scrollbar-width: Se usa para el grosor, serian auto, thin o none
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**VISUAL CODE:**
+
+-Tipos de busqueda: ya sea normal, distinguiendo mayusculas o por la palabra exacta.
+Se puede tambien buscar en base a expresiones regulares.
+Otra manera es buscasr y ademas reemplezar la palabra por otra que escribamos.
+
+-Ejecucion y Depuracion:
+Nos sirve para revisar el codigo y ver en que momento esta fallando cierta linea, variable o funcion. Esto es mas usado con Javascript.
 
 
 
