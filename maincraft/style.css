@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(71, 201, 99);
+    height: 1800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    background-image: url(https://wallpapers.com/images/high/minecraft-pictures-wc3wk7lnm3zulf7g.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    min-height: 200px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.nav--list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav--items{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+
+}
