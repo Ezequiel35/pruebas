@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     background-color: rgb(71, 201, 99);
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 250vh;
+    padding-top: 200px;
 }
 
 .nav{
@@ -17,6 +17,8 @@ body{
     display: flex;
     justify-content: start;
     z-index: 10;
+    top: 0;
+    left: 0;
 }
 
 .nav--list{
@@ -54,44 +56,64 @@ body{
     }
 }
 
-.conthistoria{
+
+.secciones{
     background-color: rgb(253, 253, 253);
-    width: 80%;
+    width: 70%;
     display: flex;
+    margin: 50px auto;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    padding: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 250px auto 50px;
+    padding: 15px;
+    scroll-margin-top: 210px;  /*crea un margen invisible que el navegador toma en cuenta cuando hace scroll automático hacia un elemento*/
     z-index: 1;
-    min-height: 500px;
+    min-height: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 40px 3px rgb(27, 197, 12);
 }
 
-.textohistoria--container{
-    
-    flex: 1 1 400px;  /* Es lo mismo que: flex-grow: 1;  flex-shrink: 1;  flex-basis: 400px;*/
-
+.secciones:nth-child(n+2){
+    animation-name: carga;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
 }
-.textohistoria{
+
+.secciones__container{
+    flex: 1 1 400px;  /* Es lo mismo que: flex-grow: 1;  flex-shrink: 1;  flex-basis: 400px;*/
+}
+
+.secciones__texto{
     font-size: 18px;
     text-align: left;
-    padding: 15px;
+    padding: 10px;
+    margin: 0px;
 }
 
-.imghistoria{
+.secciones__img{
     max-width: 100%;
     height: 450px;
-    padding: 20px;
+    padding: 10px;
 }
 
 @media (max-width: 700px){
-    .imghistoria{
+    .secciones__img{
         height: 250px;
-    } 
+    }
+
+    .secciones__texto{
+        font-size: 14px;
+    }
+}
+
+@keyframes carga{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
 }
