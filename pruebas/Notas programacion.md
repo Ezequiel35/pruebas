@@ -334,7 +334,7 @@ Otra expresion es minmax(agregar valor minimo y valor maximo) con esto lo que ha
 
     Para la expresion de repeat, se puede usar tambien la funcion de auto-fit, esto lo que hace es rellenar la grilla si le alcanza el espacio.
 
-    Para realizar que un item ocupe varios lugares, es decir generar un area de grid, se puede hacer teniendo en cuenta las lineas de comiendo, sepracion y final, tanto verticales como horizontales.
+    Para realizar que un item ocupe varios lugares, es decir generar un area de grid, se puede hacer teniendo en cuenta las lineas de comienzo, separacion y final, tanto verticales como horizontales.
     En codigo seria eligiendo un elemento y marcandole su column-start, su row-start, su column-end y row-end. O sino con grid-area: ...
     Para column-end y row-end se puede usar span para que si necesitamos moverla de lugar dentro de la grilla, solo sea ajustando el start.
     
