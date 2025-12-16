@@ -117,3 +117,43 @@ body{
 
     }
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 150px));
+    grid-template-rows: repeat(auto-fit);
+    gap: 15px;
+    max-width: 60%;
+    justify-content: center;
+    border: solid 2px rgb(162, 240, 18);
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.grid--item{
+    background-color: rgb(206, 216, 73);
+    padding: 15px;
+    font-size: clamp(16px, 2vw, 20px);
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+}
+
+.grid--item:first-child{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.grid--item a{
+    text-decoration: none;
+    color: inherit;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.grid--item:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}

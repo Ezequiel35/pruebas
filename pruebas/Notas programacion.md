@@ -100,8 +100,17 @@ Con los estilos podemos agregar los bordes y demas valores de amplitud.
 -Controls y figurarian los botones
 -Muted para que cuando se recarga la pagina se reproduzca
 El video se debe crear como un archivo en visual, no funciona si se busca como una imagen en una carpeta.
-
 Para los audios es lo mismo pero usando la etiqueta "audio" y el archivo tiene que ser de tipo audio.
+
+**Sliders:** Usa un contenedor con overflow: hidden y dentro coloca las imágenes en línea. Puedes crear la animación con @keyframes en CSS para que las imágenes se deslicen automáticamente, o usar scroll-snap para que el usuario navegue manualmente con scroll.
+Estructura HTML:
+Necesitas un contenedor principal (.slider), un contenedor interno para las slides (.slider-wrapper), y dentro los elementos individuales (.slide) con tus imágenes o contenido.
+CSS clave:
+
+El contenedor principal tiene overflow: hidden para ocultar las slides que no están visibles
+El wrapper usa display: flex para alinear las slides horizontalmente
+Cada slide ocupa el 100% del ancho del contenedor
+La animación se logra con transform: translateX() para mover el wrapper horizontalmente
 
 **Carga Diferida:** El contenido se carga a medida que el usuario va bajando y llegando al elemento. Sirve mucho para las imagenes, cuando hay varias.
 Por ejemplo en las imagenes se agrega el atributo de "loading:lazy".
@@ -330,9 +339,10 @@ Otra expresion es minmax(agregar valor minimo y valor maximo) con esto lo que ha
 
     Para ajustar esto del implicito se puede usar grid-auto-rows, que genera que el alto de todass las filas.
 
-    Para sepracion entre cada item, lo ideal es usar gap, para que todos tengan la misma separacion entre el borde.
+    Para separacion entre cada item, lo ideal es usar gap, para que todos tengan la misma separacion entre el borde.
 
-    Para la expresion de repeat, se puede usar tambien la funcion de auto-fit, esto lo que hace es rellenar la grilla si le alcanza el espacio.
+    Para la expresion de repeat, se puede usar tambien la funcion de auto-fit, esto lo que hace es rellenar la grilla si le alcanza el espacio. Es decir se genera Responsive: ejemplo:
+     repeat(auto-fit, minmax(20px, 150px));
 
     Para realizar que un item ocupe varios lugares, es decir generar un area de grid, se puede hacer teniendo en cuenta las lineas de comienzo, separacion y final, tanto verticales como horizontales.
     En codigo seria eligiendo un elemento y marcandole su column-start, su row-start, su column-end y row-end. O sino con grid-area: ...
