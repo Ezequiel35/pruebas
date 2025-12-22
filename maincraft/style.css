@@ -157,3 +157,26 @@ body{
     scale: 1.05;
     transition: 0.3s;
 }
+
+.bloque{
+    height: 150px;
+    background-color: rgb(223, 25, 223) ;
+    width: 150px;
+    margin: 50px auto;
+    animation-name: mueve;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mueve {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(180deg);
+    }
+    
+}
+
+
